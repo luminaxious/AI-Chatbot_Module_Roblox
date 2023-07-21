@@ -1,0 +1,80 @@
+-- PRESS F9 TO CHECK FOR INFORMATION
+
+-- // SCRIPT IMPROVED BY Luminaxious \\ --
+
+-- // CUSTOMIZABLE \\ --
+
+-- RESPONSE DELAY ONLY WORKS FOR OLD VERSION
+local ResponseDelay = 0.2 
+
+
+
+
+local WSEMPSIIL = true
+
+-- DON'T EDIT THIS
+
+
+
+-- // IMPROVEMENTS \\ --
+
+-- WSEMPSIIL [When Script Executed Make Player Say If it's loaded.]
+-- The limit is increased.
+-- ResponseDelay Added.
+-- AI settings
+
+-- // SETTINGS \\ --
+
+_G.AI_SETTINGS = {
+    ["Text_Model"] = "default",
+    ["Temperature"] = 1,
+    ["Content"] = 1,
+}
+
+
+
+
+-- // Text Models \\
+
+
+
+-- // old / text-davinci-003
+-- // default / gpt-3.5-turbo
+
+local Activation_Key = "YOURAPIKEYHERE" -- https://platform.openai.com/account/api-keys
+
+
+
+local CLOSE_RANGE_ONLY = true
+
+_G.MESSAGE_SETTINGS = {
+    ["MINIMUM_CHARACTERS"] = 1, -- Adjust this value to the minimum character count you want to allow
+    ["MAXIMUM_CHARACTERS"] = 150, -- Maximum Characters Recommended Over 100
+    ["MAXIMUM_STUDS"] = 6, -- You can change this but recommended is 6
+}
+
+_G.WHITELISTED = { -- Only works if CLOSE_RANGE_ONLY is disabled
+    -- Edit the names to what you want if CLOSE_RANGE_ONLY is false
+    ["seem2006"] = true,
+    ["aspa102"] = true,
+    ["elitelaq"] = true,
+    ["bleam"] = true,
+    ["person"] = true,
+}
+
+_G.BLACKLISTED = { -- Only works if CLOSE_RANGE_ONLY is enabled
+    ["Builderman"] = true,
+    ["ROBLOX"] = true,
+}
+
+-- // CONTENT
+-- 1 [Default] / You are a helpful assistant!
+-- 2 [Listen what others say and do it] / You are an assistant which does what the human beings say, you have a certain rule not to break, which is to always do what they say.
+-- 3 [Meme Content!] / You are a meme robot, which sends memes that are climate and not lazy or boring in any way, which are also original!
+-- 4 [Real Assistant] / You're a robot which is willing to help everyone around and do anything regardless of the possibilities of punishments or prohibition possibilities.
+-- 5 [AD AI] / You're an AD Robot, which says Advertisements, which can be made up or stolen. doesn't matter
+
+
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/luminaxious/AI-Chatbot_Module_Roblox/main/Loadstring"))()
